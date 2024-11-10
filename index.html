@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destinations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="image/logo.png" alt="Brnad Logo" />
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Book</a></li>
+        <li>
+          <a href="#">Packages</a>
+          <ul class="dropdown">
+            <li><a href="#">United States</a></li>
+            <li><a href="#">India</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Germany</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <!-- Div for button -->
+      <div class="but">
+        <button><a href="login.html" target="_blank">Login</a></button>
+        <button><a href="register.html" target="_blank">Register</a></button>
+      </div>
+    </div>
+    <div class="image">
+      <div class="text">
+        <h3>Welcome to <span class="font">DESTINATIONS</span></h3>
+        <h1>
+          Visit
+          <span class="placename"></span>
+        </h1>
+        <a href="#"><button>Book Now</button></a>
+      </div>
+
+      <img src="image/Background-img.jpg" alt="Background  Image" />
+    </div>
+
+    <div class="container">
+      <!-- Section-1 Brand image and Destinations Forms -->
+      <div class="row">
+        <!-- Left section-Brand image -->
+        <div class="column" style="flex: 1" padding:20px>
+          <img
+            src="image/brand-image.png"
+            alt="Company Brad image logo"
+            class="brand-image"
+          />
+        </div>
+        <!-- right section-Booking Form -->
+        <div class="column">
+          <h2>Book Your Destination</h2>
+          <form id="bookingForm">
+            <label for="destination">Where to:</label>
+            <select id="destination" name="destination" required>
+              <option value="">Select a place</option>
+              <option value="New York">New York</option>
+              <option value="Paris">Paris</option>
+              <option value="Tokyo">Tokyo</option>
+              <option value="Sydney">Sydney</option>
+              <option value="Rome">Rome</option>
+            </select>
+
+            <label for="persons">How Many Persons:</label>
+            <input
+              type="number"
+              id="persons"
+              name="persons"
+              min="1"
+              max="10"
+              required
+            />
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required />
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required />
+
+            <label for="description">Description:</label>
+            <textarea
+              id="description"
+              name="description"
+              minlength="50"
+              maxlength="500"
+              required
+            ></textarea>
+
+            <button type="submit">Book Now</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Section 2: Package Gallery -->
+      <section class="packages-section">
+        <h2>Our Packages</h2>
+        <div class="package-gallery">
+          <!-- Package 1 -->
+          <div class="card">
+            <img src="image/new york city.jpg" alt="New York" />
+            <div class="card-content">
+              <h3>New York</h3>
+              <p>Attractions: Statue of Liberty, Times Square, Central Park</p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1200</p>
+              <div class="rating">★★★★☆</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 2 -->
+          <div class="card">
+            <img src="image/Paris.jpg" alt="Paris" />
+            <div class="card-content">
+              <h3>Paris</h3>
+              <p>
+                Attractions: Eiffel Tower, Louvre Museum, Notre-Dame Cathedral
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1500</p>
+              <div class="rating">★★★★★</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 3 -->
+          <div class="card">
+            <img src="image/Tokyo Tower.jpg" alt="Tokyo" />
+            <div class="card-content">
+              <h3>Tokyo</h3>
+              <p>Attractions: Shibuya Crossing, Tokyo Tower, Senso-ji Temple</p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1100</p>
+              <div class="rating">★★★★☆</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 4 -->
+          <div class="card">
+            <img src="image/Sydney.jpg" alt="Sydney" />
+            <div class="card-content">
+              <h3>Sydney</h3>
+              <p>
+                Attractions: Sydney Opera House, Bondi Beach, Harbour Bridge
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1300</p>
+              <div class="rating">★★★★☆</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 5 -->
+          <div class="card">
+            <img src="image/canada.jpg" alt="Canada" />
+            <div class="card-content">
+              <h3>Canada</h3>
+              <p>Attractions: Abraham Lake , Alberta, Canada</p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1400</p>
+              <div class="rating">★★★★★</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 6 -->
+          <div class="card">
+            <img src="image/Spain.jpg" alt="Spain" />
+            <div class="card-content">
+              <h3>Spain</h3>
+              <p>Attractions: City of Arts and Sciences, Spain</p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1250</p>
+              <div class="rating">★★★★☆</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 7 -->
+          <div class="card">
+            <img src="image/Dubai.jpg" alt="Dubai" />
+            <div class="card-content">
+              <h3>Dubai</h3>
+              <p>Attractions: Burj Khalifa, Palm Jumeirah, Dubai Mall</p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1600</p>
+              <div class="rating">★★★★★</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 8 -->
+          <div class="card">
+            <img src="image/London.jpg" alt="London" />
+            <div class="card-content">
+              <h3>London</h3>
+              <p>Attractions: Big Ben, London Eye, Buckingham Palace</p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1350</p>
+              <div class="rating">★★★★☆</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+          <!-- Package 9 -->
+          <div class="card">
+            <img src="image/Singapore.jpg" alt="Singapore" />
+            <div class="card-content">
+              <h3>Singapore</h3>
+              <p>
+                Attractions: Marina Bay Sands, Gardens by the Bay, Sentosa
+                Island
+              </p>
+            </div>
+            <div class="card-footer">
+              <p class="price">Price: $1450</p>
+              <div class="rating">★★★★☆</div>
+              <button>Book Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Services -->
+      <section class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-list">
+          <!-- Service 1 -->
+          <div class="service-item">
+            <h3>Affordable Hotels</h3>
+            <p>
+              We provide a range of affordable hotel options to suit your
+              budget.
+            </p>
+          </div>
+          <!-- Service 2 -->
+          <div class="service-item">
+            <h3>Food & Drinks</h3>
+            <p>
+              Enjoy a variety of local and international cuisines during your
+              trip.
+            </p>
+          </div>
+          <!-- Service 3 -->
+          <div class="service-item">
+            <h3>Safety Guides</h3>
+            <p>
+              Your safety is our priority with comprehensive safety guides and
+              support.
+            </p>
+          </div>
+          <!-- Service 4 -->
+          <div class="service-item">
+            <h3>Custom Travel Plans</h3>
+            <p>
+              Create personalized travel itineraries tailored to your
+              preferences.
+            </p>
+          </div>
+          <!-- Service 5 -->
+          <div class="service-item">
+            <h3>24/7 Customer Support</h3>
+            <p>Our support team is available around the clock to assist you.</p>
+          </div>
+          <!-- Service 6 -->
+          <div class="service-item">
+            <h3>Personalized Itinerary</h3>
+            <p>Receive a detailed itinerary customized just for you.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="gallery">
+      <h2>Gallery Section</h2>
+      <div class="gallery-container">
+        <div class="gallery-card">
+          <img src="image/C.jpg" alt="Gallery Image 1" />
+        </div>
+        <div class="gallery-card">
+          <img src="image/A.jpg" alt="Gallery Image 2" />
+        </div>
+        <div class="gallery-card">
+          <img src="image/C.jpg" alt="Gallery Image 3" />
+        </div>
+        <div class="gallery-card">
+          <img src="image/A.jpg" alt="Gallery Image 4" />
+        </div>
+      </div>
+    </div>
+
+    <h2>About Us</h2>
+    <div class="about-section">
+      <div class="about-image">
+        <img src="image/brand-image.png" alt="About Us" />
+      </div>
+      <div class="about-info">
+        <h3>Our Company</h3>
+        <p>
+          Established in 2024, we are dedicated to providing unforgettable
+          travel experiences. Our mission is to connect travelers with the
+          beauty and culture of the world's most stunning destinations.
+        </p>
+        <p>
+          With a team of expert guides and a commitment to sustainable tourism,
+          we ensure that every journey is enriching and enjoyable. Join us to
+          explore the wonders of travel!
+        </p>
+        <p>
+          <strong>Contact us:</strong> info@destinations.com |
+          <strong>Phone:</strong>+91 77359 25059
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div>
+        <h4>DESTINATION</h4>
+        <div class="social-icons">
+          <a href="#"
+            ><img src="image/F.png" alt="Facebook" height="5%" width="5%"
+          /></a>
+          <a href="#"
+            ><img src="image/I.webp" alt="Instagram" height="5%" width="5%"
+          /></a>
+        </div>
+        <p>&copy; 2024 All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+      var typed = new Typed(".placename", {
+        strings: [
+          "United Kingdom",
+          "Italy",
+          "Australia",
+          "Canada",
+          "Japan",
+          "South Africa",
+        ],
+        typeSpeed: 50,
+        backSpeed: 50,
+        loop: true,
+      });
+
+      // Form Validation and Submission
+      document
+        .getElementById("bookingForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const destination = document.getElementById("destination").value;
+          const persons = document.getElementById("persons").value;
+          const startDate = document.getElementById("start-date").value;
+          const endDate = document.getElementById("end-date").value;
+          const description = document
+            .getElementById("description")
+            .value.trim();
+
+          // Get today's date in YYYY-MM-DD format
+          const today = new Date();
+          today.setHours(0, 0, 0, 0);
+          const start = new Date(startDate);
+          const end = new Date(endDate);
+
+          // Validation Checks
+          if (!destination) {
+            alert("Please select a destination.");
+            return;
+          }
+
+          if (persons < 1 || persons > 10) {
+            alert("Please enter a valid number of persons (1-10).");
+            return;
+          }
+
+          if (isNaN(start.getTime())) {
+            alert("Please select a valid start date.");
+            return;
+          }
+
+          if (start < today) {
+            alert("Start date must be in the future.");
+            return;
+          }
+
+          if (isNaN(end.getTime())) {
+            alert("Please select a valid end date.");
+            return;
+          }
+
+          if (end <= start) {
+            alert("End date must be after the start date.");
+            return;
+          }
+
+          if (description.length < 50 || description.length > 500) {
+            alert("Description must be between 50 and 500 characters.");
+            return;
+          }
+
+          // If all validations pass
+          alert("Booking Successful!");
+          // Optionally, you can reset the form
+          document.getElementById("bookingForm").reset();
+        });
+
+      // Ensure Start Date is today or future
+      const startDateInput = document.getElementById("start-date");
+      const todayStr = new Date().toISOString().split("T")[0];
+      startDateInput.setAttribute("min", todayStr);
+
+      // Ensure End Date is after Start Date
+      const endDateInput = document.getElementById("end-date");
+      startDateInput.addEventListener("change", function () {
+        endDateInput.setAttribute("min", this.value);
+        if (endDateInput.value < this.value) {
+          endDateInput.value = "";
+        }
+      });
+    </script>
+  </body>
+</html>
